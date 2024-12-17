@@ -1,12 +1,5 @@
 ﻿
-@{
-    var isLoggedIn = false;
-}
-    @if (isLoggedIn)
-    {
-      <p>Welcome back!</p>
-    }
-    else
-    {
-        <p>Please log in !</p>
-    }
+@model ASP.NET_Core_Fundamentals.Models.Item
+
+<h1>@Model.Name</h1>
+<p>@Model.Id</p>
