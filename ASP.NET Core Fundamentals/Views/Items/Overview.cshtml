@@ -1,0 +1,11 @@
+﻿@model ASP.NET_Core_Fundamentals.Models.Item
+@{
+    var message = "hello World!";
+    var items = new List<string> { "Item1", "Item2", "Item3" };
+}
+<p>
+    @foreach(var item in items)
+    {
+        <li>@item</li>
+    }
+</p>
