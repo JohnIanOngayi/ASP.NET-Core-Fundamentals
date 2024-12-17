@@ -1,11 +1,12 @@
-﻿@model ASP.NET_Core_Fundamentals.Models.Item
+﻿
 @{
-    var message = "hello World!";
-    var items = new List<string> { "Item1", "Item2", "Item3" };
+    var isLoggedIn = false;
 }
-<p>
-    @foreach(var item in items)
+    @if (isLoggedIn)
     {
-        <li>@item</li>
+      <p>Welcome back!</p>
     }
-</p>
+    else
+    {
+        <p>Please log in !</p>
+    }
